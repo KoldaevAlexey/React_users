@@ -43,6 +43,7 @@ function App() {
 
     const onClickSuccessBack = () => {
         setSuccess(false);
+        setInvites([]);
     };
 
     return (

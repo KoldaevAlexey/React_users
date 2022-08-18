@@ -55,9 +55,14 @@ export const Users = ({
                         ))}
                 </ul>
             )}
-            <button onClick={onClickSendInvites} className="send-invite-btn">
-                Отправить приглашение
-            </button>
+            {invites.length !== 0 && (
+                <button
+                    onClick={onClickSendInvites}
+                    className="send-invite-btn"
+                >
+                    Отправить приглашение
+                </button>
+            )}
         </>
     );
 };
